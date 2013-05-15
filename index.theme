@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=whit-e
+Comment=elementary mod theme
+Encoding=UTF-8
+
+Name[en_US]=whit-e
+
+[X-GNOME-Metatheme]
+GtkTheme=whit-e
+MetacityTheme=whit-e
+IconTheme=Leon
+CursorTheme=DMZ-Black
+ButtonLayout=close:maximize
