@@ -1,0 +1,100 @@
+/* Copyright 2011-2012 elementary
+*
+* This file is part of the elementary GTK theme.
+*
+* The elementary GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The elementary GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*shade (@bg_color, 0.50)
+* You should have received a copy of the GNU General Public License along
+* with the elementary GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+.sidebar,
+.sidebar.view {
+    
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                                     from (#FAFAFA),
+                                     color-stop (0.4, #F8F8F8),
+                                     to (#F8F8F8));
+
+    background-color: transparent;
+    border-radius: 0;
+    color: shade (@bg_color, 0.40);
+    
+  
+}
+
+.sidebar {
+    -GtkTreeView-horizontal-separator: 1;
+    -GtkTreeView-vertical-separator: 1;
+}
+
+.sidebar.view:selected,
+.sidebar.view:prelight:selected {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    -unico-inner-stroke-width: 1px 0 1px 0;
+
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@selected_bg_color, 1.25)),
+                    to (shade (@selected_bg_color, 0.98)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (shade (@selected_bg_color, 1.05)),
+                    to (shade (@selected_bg_color, 0.88)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#fff, 0.20)),
+                    to (alpha (#fff, 0.10)));
+color: shade (#676767, 0.50);
+}
+
+.sidebar.view:selected:backdrop,
+.sidebar.view:prelight:selected:backdrop {
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@bg_color, 0.95)),
+                    to (shade (@bg_color, 0.83)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (shade (@bg_color, 0.85)),
+                    to (shade (@bg_color, 0.73)));
+
+    color: shade (@bg_color, 0.50);
+}
+
+
+.sidebar.view:prelight {
+    background-color:         shade (@bg_color, 1.10);
+}
+
+.sidebar-pane-separator,
+.sidebar-pane-separator:prelight,
+.sidebar-pane-separator:selected {
+
+    -unico-centroid-texture: none;
+    border-width: 0;
+    -GtkPaned-handle-size: 1;
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                                     from ( #E0E0E0),
+                                     color-stop (0.4,  #E0E0E0),
+                                     to (#E0E0E0));
+    background-color: #E0E0E0;
+    
+    border-color: #E0E0E0;
+}
