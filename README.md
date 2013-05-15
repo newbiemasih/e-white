@@ -3,7 +3,9 @@
 Original idea from elementaryOS
 <br>
 <br>
-This is screenshoot
+This is screenshot
 <br>
 ![Screenshoot](http://i.imgur.com/MC3OeAz.png)
 ##License
+
+GPL
